@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eco Code Mobile</title>
+    <link rel="icon" type="image/png" href="assets/images/Logo.png">
+    <style>
+    
+    * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;      
+    }
+
+    body {
+        margin: 0;
+        font-family: Arial, sans-serif;
+        color: #222;
+        background: #f7f8f1;
+    }
+
+    nav {
+      position: fixed;
+      top: 0;
+      width: 100%;
+      height: 90px;
+      background: #203b03;
+      color: #fff;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0 8%;
+      transition: height 0.4s;
+      z-index: 10;
+    }
+ 
+    nav.pequena {
+      height: 55px;
+    }
+
+    nav a {
+        color: #FFF;
+        text-decoration: none;
+        margin-left: 20px;
+    }
+
+    .logo {
+        font-weight: bold;
+        color: #c8e477;
+    }
+
+    .hero {
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        padding: 25px;
+    }
+
+    .hero h1 {
+        font-size: clamp(36px, 7vw, 80px);
+        margin-bottom: 10px;
+    }
+
+    .hero p {
+        font-size: 22px;
+    }
+
+    section {
+        padding: 80px 8%;
+    }
+
+    h2 {
+        font-size: 32px;
+    }
+
+    footer {
+        background: #333;
+        color: white;
+        text-align: center;
+        padding: 20px;
+    }
+
+    footer {
+        background: #203b03;
+        color: white;
+        text-align: center;
+        padding: 20px;
+    }
+
+    footer a {
+        color: white;
+    }
+
+    @media (max-width: 700px) {
+
+        nav {
+            height: 65px;
+            padding: 0 5%;
+        }
+
+        nav.pequena {
+            height: 50px;
+        }
+
+        nav a {
+            font-size: 14px;
+            margin-left: 10px;
+        }
+
+        .logo {
+            font-size: 16px;
+        }
+
+        .hero {
+            display: flex;
+            height: 100vh;
+            height: 100svh;
+            padding: 15px;
+        }
+
+        .hero h1 {
+            font-size: 38px;
+        }
+
+        section {
+            padding: 50px 5%;
+        }
+
+        h2 {
+            font-size: 26px;
+        }
+    }
+
+    </style>
+</head>
+<body>
+    <nav id="navBar">
+        <div class="logo">Eco Code Mobile</div>
+        <div>
+            <a href="#"></a>
+            <a href="#"></a>
+            <a href="#sobre">Sobre</a>
+        </div>
+    </nav>
+
+    <header class="hero">
+        <h1>Eco Code Mobile</h1>
+        <video autoplay muted loop playsinline>
+            <source src="assets/video/video.mp4" type="video/mp4">
+        </video>
+    </header>
+
+    <footer id="sobre">
+     <p>Eco Code Mobile, sem desperdício e reutilização responsável</p>
+     <p>&copy; 2026 Eco Code Mobile. Todos os direitos reservados.</p>
+   </footer>
+
+   <script>
+    // Aqui vem o javascript
+    const navBar = document.getElementById('navBar');
+ 
+    window.addEventListener('scroll', () => {
+      if (window.scrollY > 50) {
+        navBar.classList.add("pequena");
+      } else {
+        navBar.classList.remove("pequena");
+      }
+    });
+  </script>
+</body>
+</html>
