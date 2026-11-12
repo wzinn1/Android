@@ -73,16 +73,21 @@
     h2 {
         font-size: 32px;
         padding: 10px;
+        text-align: center;
     }
 
     h3 {
         font-size: 25px;
         padding: 10px;
+        text-align: center;
     }
 
     section {
         display: flex;
+        justify-content: center;
         gap: 20px;
+        flex-direction: row;
+        align-items: center;
     }
 
     .imagem {
@@ -91,7 +96,7 @@
 
     .imagem-hover {
         position: relative;
-        width: 200px;
+        width: 250px;
         display: inline-block;
     }
     
@@ -99,8 +104,16 @@
         width: 100%;
         height: auto;
         display: block;
+        object-fit: cover;
+        cursor: pointer;
+        transition: 0.3s ease;
+        border: 4px solid transparent;
+        border-radius: 10px;
     }
-    
+    .imagem-hover:hover img {
+    border: 4px solid #567d20;
+    border-radius: 10px;
+}
     .imagem-hover img:last-child {
         position: absolute;
         top: 0;
@@ -127,3 +140,47 @@
         color: white;
         padding: 5px;
     }
+    .botao {
+    display: inline-block;
+    background: #203b03;
+    color: white;
+    padding: 12px 25px;
+    border-radius: 8px;
+    text-decoration: none;
+    margin-top: 20px;
+    transition: 0.3s;
+}
+
+.botao:hover {
+    background: #567d20;
+    transform: scale(1.05);
+}
+
+.voltar-topo {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 1000;
+    padding: 20px;
+    border-radius: 10px;
+    background: #203b03;
+    color: white;
+    box-shadow: 0 4px 15px #0008;
+    max-width: 350px;
+    display: none;
+}
+
+.voltar-topo button {
+    padding: 10px 16px;
+    margin-top: 10px;
+    border: none;
+    border-radius: 6px;
+    background: #c8e477;
+    color: #203b03;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.voltar-topo button:hover {
+    background: white;
+}
