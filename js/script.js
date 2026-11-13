@@ -1,6 +1,5 @@
 
 const navBar = document.getElementById('navBar');
-const caixaCookies = document.getElementById('caixa-cookies');
 const botaoVoltarTopo = document.querySelector('#voltar-topo button');
 const imagens = document.querySelectorAll('.imagem-hover img');
 
@@ -12,7 +11,7 @@ window.addEventListener('scroll', () => {
         navBar.classList.remove("pequena");
     }
 
-    if (window.scrollY > 200) {
+    if (window.scrollY > 500) {
         document.getElementById('voltar-topo').style.display = 'block';
     } else {
         document.getElementById('voltar-topo').style.display = 'none';
@@ -37,4 +36,29 @@ imagens.forEach(imagem => {
 
     });
 
+});
+const caixaCookies = document.getElementById('cookies');
+const fundoCookies = document.getElementById('fundo-cookies');
+const botaoAceitar = document.getElementById('aceitar');
+const botaoRecusar = document.getElementById('recusar');
+
+document.documentElement.classList.add('bloqueado');
+document.body.classList.add('bloqueado');
+
+function fecharCookies() {
+    caixaCookies.style.display = 'none';
+    fundoCookies.style.display = 'none';
+
+    document.documentElement.classList.remove('bloqueado');
+    document.body.classList.remove('bloqueado');
+}
+
+botaoAceitar.addEventListener('click', () => {
+    console.log('cookies aceites');
+    fecharCookies();
+});
+
+botaoRecusar.addEventListener('click', () => {
+    console.log('cookies recusados');
+    fecharCookies();
 });
