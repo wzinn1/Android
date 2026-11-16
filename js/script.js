@@ -28,15 +28,7 @@ botaoVoltarTopo.addEventListener('click', () => {
     });
 
 });
-imagens.forEach(imagem => {
 
-    imagem.addEventListener('click', () => {
-
-        imagem.classList.toggle('selecionada');
-
-    });
-
-});
 const caixaCookies = document.getElementById('cookies');
 const fundoCookies = document.getElementById('fundo-cookies');
 const botaoAceitar = document.getElementById('aceitar');
