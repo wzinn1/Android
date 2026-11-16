@@ -275,12 +275,6 @@
         background: white;
     }
 
-    html.bloqueado,
-    body.bloqueado {
-        overflow: hidden !important;
-        height: 100%;
-        overscroll-behavior: none;
-    }
 
     .cookies {
         position: fixed;
