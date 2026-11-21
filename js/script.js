@@ -54,3 +54,16 @@ botaoRecusar.addEventListener('click', () => {
     console.log('cookies recusados');
     fecharCookies();
 });
+
+const botaoMenu = document.getElementById("botao-menu");
+const menu = document.getElementById("menu");
+
+botaoMenu.addEventListener("click", function() {
+
+    menu.classList.toggle("active");
+
+    const aberto = menu.classList.contains("active");
+
+    botaoMenu.setAttribute("aria-expanded", aberto);
+
+});
