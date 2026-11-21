@@ -1,4 +1,3 @@
-
 const navBar = document.getElementById('navBar');
 const botaoVoltarTopo = document.querySelector('#voltar-topo button');
 const imagens = document.querySelectorAll('.imagem-hover img');
@@ -34,8 +33,7 @@ const fundoCookies = document.getElementById('fundo-cookies');
 const botaoAceitar = document.getElementById('aceitar');
 const botaoRecusar = document.getElementById('recusar');
 
-document.documentElement.classList.add('bloqueado');
-document.body.classList.add('bloqueado');
+
 
 function fecharCookies() {
     caixaCookies.style.display = 'none';
