@@ -93,16 +93,15 @@ nav a {
     transform: translateY(-1px);
 }
 
-.logo {
+.titulo {
     font-weight: bold;
     color: white;
     font-size: 17px;
 }
 
 .logo1 {
-    height: 38px;
-    width: 38px;
-    object-fit: contain;
+    height: 50px;
+    width: 50px;
 }
 
 .hero {
@@ -112,15 +111,6 @@ nav a {
     justify-content: center;
     text-align: center;
     padding: 25px;
-}
-
-.hero h1 {
-    font-size: clamp(36px, 7vw, 80px);
-    margin-bottom: 10px;
-}
-
-.hero p {
-    font-size: 22px;
 }
 
 .video {
@@ -233,7 +223,7 @@ nav a {
     display: block;
     width: 80px;
     height: 4px;
-    font-family: Georgia, serif;;
+    font-family: Arial, sans-serif;
     background-color: #6b8e23;
     margin: 15px auto 0;
     border-radius: 5px;
@@ -319,22 +309,6 @@ footer p {
     color: white;
     padding: 5px;
 }
-
-.botao {
-    display: inline-block;
-    background: #203b03;
-    color: white;
-    padding: 12px 25px;
-    border-radius: 8px;
-    text-decoration: none;
-    margin-top: 20px;
-    transition: 0.3s;
-}
-
-.botao:hover {
-    background: #567d20;
-    transform: scale(1.05);
-}
     
 .voltar-topo {
     position: fixed;
@@ -399,7 +373,7 @@ footer p {
 
 .cookies p {
     font-size: 14px;
-    padding: 0 0 20px;
+    padding: 15px 0 20px;
 }
 
 .botoes-cookies {
@@ -413,7 +387,7 @@ footer p {
     border: none;
     border-radius: 6px;
     cursor: pointer;
-    background-color: #567d20;
+    background: #567d20;
 }
 
 .cookies button:hover {
