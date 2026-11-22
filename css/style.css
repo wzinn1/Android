@@ -2,14 +2,14 @@
     margin: 0;
     padding: 0;      
 }
-
+ 
 body {
     margin: 30;
     font-family: Arial, sans-serif;
     color: #222;
     background: #eef3e8;
 }
-
+ 
 .navBar {
     position: fixed;
     width: 90%;
@@ -23,7 +23,7 @@ body {
     justify-content: space-between;
     z-index: 1000;
 }
-
+ 
 nav.pequena {
     top: 5px;
     height: 55px;
@@ -32,13 +32,13 @@ nav.pequena {
     left: 4%;
     padding: 0 25px;
 }
-
+ 
 nav a {
     color: #FFF;
     text-decoration: none;
     margin-left: 20px;
 }
-
+ 
 .menu {
     display: none;
     flex-direction: column;
@@ -55,26 +55,26 @@ nav a {
     margin: 0;
     z-index: 1000;
 }
-
+ 
 .menu-navegação {
     position: relative;
 }
-
+ 
 .menu.active {
     display: flex;
 }
-
+ 
 .menu a {
     color: white;
     text-decoration: none;
     font-size: 15px;
     transition: 0.3s;
 }
-
+ 
 .menu a:hover {
     color: #8ac441;
 }
-
+ 
 /* Menu de navegação */
 .botao-menu {
     display: block;
@@ -87,23 +87,27 @@ nav a {
     border: none;
     transition: 0.3s;
 }
-
+ 
 .botao-menu:hover {
     background-color: #c2c9be;
     transform: translateY(-1px);
 }
+<<<<<<< HEAD
 
+=======
+ 
+>>>>>>> e15db81 (Preparação e pontos de recolha.)
 .titulo {
     font-weight: bold;
     color: white;
     font-size: 17px;
 }
-
+ 
 .logo1 {
     height: 50px;
     width: 50px;
 }
-
+ 
 .hero {
     height: 100vh;
     display: flex;
@@ -112,7 +116,11 @@ nav a {
     text-align: center;
     padding: 25px;
 }
+<<<<<<< HEAD
 
+=======
+ 
+>>>>>>> e15db81 (Preparação e pontos de recolha.)
 .video {
     width: 100%;
     height: 100%;
@@ -123,25 +131,31 @@ nav a {
     z-index: 0;
     background: black;
 }
-
+ 
 /* Lapa-Ninja nome do site */
 .texto-campanha {
     max-width: 380px;
     margin: 120px auto;
-    font-family: Arial, sans-serif;
+    font-family: georgia, sans-serif;
     font-size: 21px;
     line-height: 1.2;
 }
-
+ 
 .primeiro-texto {
     color: #174b3a;
     margin-bottom: 25px;
 }
-
+ 
 .segundo-texto {
      color: #174b3a;
 }
-
+section {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-direction: row;
+    align-items: center;
+}
 .passos {
     display: flex;
     justify-content: center;
@@ -149,13 +163,13 @@ nav a {
     flex-direction: row;
     align-items: center;
 }
-
+ 
 .imagem {
     width: 350px;
     height: 520px;
     perspective: 1000px;
 }
-
+ 
 .imagem-inner {
     width: 100%;
     height: 100%;
@@ -163,11 +177,11 @@ nav a {
     transition: transform 0.8s;
     transform-style: preserve-3d;
 }
-
+ 
 .imagem:hover .imagem-inner {
     transform: rotateY(180deg);
 }
-
+ 
 .frente, .verso {
     width: 100%;
     height: 100%;
@@ -175,17 +189,17 @@ nav a {
     object-fit: contain;
     backface-visibility: hidden;
 }
-
+ 
 .verso {
     transform: rotateY(180deg);
 }
-
+ 
 .verso img {
     width: 100%;
     height: 100%;
     object-fit: contain;
 }
-
+ 
 .texto-frente {
     position: absolute;
     backface-visibility: hidden;
@@ -198,7 +212,7 @@ nav a {
     text-align: center;
     z-index: 1;
 }
-
+ 
 .objetivo {
     padding: 70px 10%;
     display: grid;
@@ -206,7 +220,7 @@ nav a {
     gap: 25px 40px;
     align-items: center;
 }
-
+ 
 /* Título */
 .objetivo h2 {
     grid-column: 1 / 3;
@@ -216,7 +230,7 @@ nav a {
     margin-bottom: 15px;
     position: relative;
 }
-
+ 
 /* Linha decorativa */
 .objetivo a h2 {
     flex-direction: row;
@@ -228,7 +242,7 @@ nav a {
     margin: 15px auto 0;
     border-radius: 5px;
 }
-
+ 
 /* Parágrafos */
 .objetivo p {
     background-color: #0b2b18;
@@ -242,21 +256,124 @@ nav a {
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
     transition: transform 0.3s ease;
 }
-
+ 
 /* Efeito ao passar o rato */
 .objetivo p:hover {
     transform: translateY(-5px);
 }
+body {
+    background-color: #f4ede5;
+    font-family: Arial, sans-serif;
+}
 
+
+.preparar {
+    background-color: #f4ede5;
+    padding: 80px 5%;
+}
+
+/*Título */ 
+.preparar h2 {
+    color: #667542;
+    font-size: 45px;
+    margin-bottom: 15px;
+    text-align: start;
+    display: block;
+    position: relative;
+    
+}
+
+.introducao {
+    color: #667542;
+    font-size: 18px;
+    margin-bottom: 45px;
+}
+
+.container-passos {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+}
+
+.passo {
+    background-color: #174b3a;
+    color: white;
+    padding: 35px;
+    border-radius: 8px;
+    min-height: 160px;
+    transition: transform 0.3s ease;
+    font-family: georgia, sans-serif;
+}
+
+.passo:hover {
+    transform: translateY(-8px);
+}
+
+.passo h3 {
+    font-size: 25px;
+    font-weight: normal;
+    margin-bottom: 15px;
+}
+
+.passo p {
+    font-size: 16px;
+    line-height: 1.5;
+}
+.passo:nth-child(1) {
+    margin-top: 0;
+}
+
+.passo:nth-child(2) {
+    margin-top: 75px;
+}
+
+.passo:nth-child(3) {
+    margin-top: 150px;
+}
+.aviso {
+    margin-top: 35px;
+    padding: 20px;
+    background-color: #e5dfd3;
+    border-left: 5px solid #82964f;
+    color: #db0808;
+    line-height: 1.6;
+    border-radius: 5px;
+}
+
+@media (max-width: 700px) {
+
+    .container-passos {
+        grid-template-columns: 1fr;
+    }
+
+    .preparar h2 {
+        font-size: 32px;
+    }
+
+}
 .datas {
     padding: 30px;
     text-align: center;
     display: block;
 }
-
+ 
 .datas h2 {
-    color: green;
+    color: #266854;
     font-size: 28px;
+}
+.container-datas {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+}
+.datas {
+    background-color: white;
+    color: hsl(60, 3%, 7%);
+    padding: 35px;
+    border-radius: 8px;
+    min-height: 160px;
+    transition: transform 0.3s ease;
+   font-family: 'Switzer', 'Switzer Variable', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
 }
 
 .datas p {
@@ -265,51 +382,31 @@ nav a {
     margin: 15px;
 }
 
-.preparar {
-    background-color: #eef3e8;
-    padding: 40px;
-    text-align: center;
-    display: block;
-}
-
-.preparar h2 {
-    color: green;
-    font-size: 28px;
-}
-
-.passo {
-    background-color: white;
-    padding: 15px;
-    margin: 15px;
-    border-radius: 10px;
-}
-
-.passo h3 {
-    color: #287447;
-}
-
-.passo p {
-    font-size: 16px;
-}
-
-.aviso {
-    color: red;
-    font-weight: bold;
-    margin-top: 25px;
-}
-
 footer {
-    background: #203b03;
+    background: #667542;
     color: white;
     text-align: center;
     padding: 20px;
 }
-
+ 
 footer p {
     color: white;
     padding: 5px;
 }
+<<<<<<< HEAD
     
+=======
+.botao {
+    display: inline-block;
+    background: #203b03;
+    color: white;
+    padding: 12px 25px;
+    border-radius: 8px;
+    text-decoration: none;
+    margin-top: 20px;
+    transition: 0.3s;
+}   
+>>>>>>> e15db81 (Preparação e pontos de recolha.)
 .voltar-topo {
     position: fixed;
     bottom: 20px;
@@ -323,7 +420,7 @@ footer p {
     max-width: 350px;
     display: none;
 }
-    
+   
 .voltar-topo button {
     padding: 10px 16px;
     margin-top: 10px;
@@ -334,11 +431,11 @@ footer p {
     cursor: pointer;
     font-weight: bold;
 }
-    
+   
 .voltar-topo button:hover {
     background: white;
 }
-
+ 
 .cookies {
     position: fixed;
     bottom: 20px;
@@ -351,7 +448,7 @@ footer p {
     z-index: 9999;
     display: block;
 }
-
+ 
 .fundo-cookies {
     position: fixed;
     top: 0;
@@ -361,26 +458,26 @@ footer p {
     background: rgba(0, 0, 0, 0.6);
     z-index: 9998;
 }
-
+ 
 .cookies button {
     cursor: pointer;
     pointer-events: auto;
 }
-
+ 
 .cookies h3 {
     margin-top: 0;
 }
-
+ 
 .cookies p {
     font-size: 14px;
     padding: 15px 0 20px;
 }
-
+ 
 .botoes-cookies {
     display: flex;
     gap: 10px;
 }
-
+ 
 .botoes-cookies button {
     flex: 1;
     padding: 10px;
@@ -389,7 +486,7 @@ footer p {
     cursor: pointer;
     background: #567d20;
 }
-
+ 
 .cookies button:hover {
     opacity: .8;
 }
