@@ -1,16 +1,8 @@
 const navBar = document.getElementById('navBar');
 const botaoVoltarTopo = document.querySelector('#voltar-topo button');
 const imagens = document.querySelectorAll('.imagem-hover img');
- 
+
 window.addEventListener('scroll', () => {
- 
-    if (window.scrollY > 50) {
-        navBar.classList.add("pequena");
-    } else {
-        navBar.classList.remove("pequena");
-    }
-    });
- window.addEventListener('scroll', () => {
     if (window.scrollY > 500) {
         document.getElementById('voltar-topo').style.display = 'block';
     } else {
