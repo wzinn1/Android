@@ -92,11 +92,6 @@ nav a {
     background-color: #c2c9be;
     transform: translateY(-1px);
 }
-<<<<<<< HEAD
-
-=======
- 
->>>>>>> e15db81 (Preparação e pontos de recolha.)
 .titulo {
     font-weight: bold;
     color: white;
@@ -116,11 +111,7 @@ nav a {
     text-align: center;
     padding: 25px;
 }
-<<<<<<< HEAD
-
-=======
  
->>>>>>> e15db81 (Preparação e pontos de recolha.)
 .video {
     width: 100%;
     height: 100%;
@@ -216,7 +207,7 @@ section {
 .objetivo {
     padding: 70px 10%;
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: repeat(2, 1fr);
     gap: 25px 40px;
     align-items: center;
 }
@@ -367,7 +358,7 @@ body {
     gap: 25px;
 }
 .datas {
-    background-color: white;
+    background-color: #f4ede5;
     color: hsl(60, 3%, 7%);
     padding: 35px;
     border-radius: 8px;
@@ -393,9 +384,6 @@ footer p {
     color: white;
     padding: 5px;
 }
-<<<<<<< HEAD
-    
-=======
 .botao {
     display: inline-block;
     background: #203b03;
@@ -406,7 +394,6 @@ footer p {
     margin-top: 20px;
     transition: 0.3s;
 }   
->>>>>>> e15db81 (Preparação e pontos de recolha.)
 .voltar-topo {
     position: fixed;
     bottom: 20px;
